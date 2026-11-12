@@ -1,0 +1,410 @@
+.main-index{
+
+    .seccion-hero{
+        position: relative;
+        height: 35rem;
+        width: 100%;
+        overflow: hidden;
+        .carousel-img{
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity .8s ease;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            &.active{
+                opacity: 1;
+            }
+        }
+    }
+    
+    .seccion-productos{
+        padding: 6rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .sec-titulo{
+            h1{
+                font-family: "Playfair Display", serif;
+                font-size: 3rem;
+                font-weight: 100;
+                text-transform: uppercase;
+            }
+        }
+
+        .sec-productos{
+            padding: 2rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 20rem;
+                border-radius: 1rem;
+                border: 1px solid rgb(255, 192, 203);
+                transition: all .3s ease-in-out;
+                .card-img{
+                    height: 12rem;
+                    width: 100%;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 1rem 1rem 0 0;
+                    }
+                }
+                .card-info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 1rem;
+                    padding: 1rem;
+                    height: 15rem;
+                    h2{
+                        margin: 0;
+                        font-family: "Playfair Display", serif;
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                    .p-descrip{
+                        font-family: "Nunito Sans", sans-serif;
+                        font-size: 1rem;
+                        text-align: justify;
+                    }
+                    .p-precio{
+                        margin: 0;
+                        font-family: "Playfair Display", serif;
+                        font-size: 1.2rem;
+                        text-align: center;
+                    }
+                }
+                .card-btn{
+                    padding-bottom: 1rem;
+                    .btn-agregar{
+                        font-family: "Nunito Sans", sans-serif;
+                        font-size: 1.2rem;
+                        border: 1px solid rgb(255, 192, 203, .2);
+                        border-radius: .5rem;
+                        background: pink;
+                        padding: .5rem 1.5rem;
+                        color: white;
+                        transition: all .3s ease-in-out;
+
+                        &:active{
+                            background: white;
+                            color: pink;
+                            box-shadow: 1px 2px pink;
+                        }
+                    }
+                }
+                &:hover{
+                    background: rgb(255, 192, 203, .2);
+                    border: 1px solid rgb(255, 192, 203, .2);
+                }
+            }
+        }
+    }
+
+    .seccion-banner-1{
+        padding: 2rem;
+        display: grid;
+        grid-template-areas: "b-1 b-2 b-3 b-4";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        background: rgb(255, 192, 203, .1);
+
+        .banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .material-symbols-outlined{
+                font-variation-settings:
+                'FILL' 0,
+                'wght' 100,
+                'GRAD' 0;
+                font-size: 6rem;
+                transform: scaleX(-1);
+                color: pink;
+            }
+            h3{
+                font-family: "Londrina Shadow", sans-serif;
+                font-size: 1.8rem;
+                color: rgb(0, 0, 0, .8);
+            }
+        }
+        .b-1{
+            grid-area: b-1;
+        }
+        .b-2{
+            grid-area: b-2;
+        }
+        .b-3{
+            grid-area: b-3;
+        }
+        .b-4{
+            grid-area: b-4;
+        }
+    }
+
+    .seccion-buscador{
+        padding: 6rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .sec-titulo{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            h2{
+                padding: 0;
+                margin: 0;
+                font-family: "Playfair Display", serif;
+                font-size: 3rem;
+                font-weight: 100;
+                text-transform: uppercase;
+            }
+            h3{
+                font-family: "Nunito Sans", sans-serif;
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+        .sec-buscador{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            input, select, button {
+                padding: .5rem 2rem;
+                font-family: "Nunito Sans", sans-serif;
+                font-size: 1rem;
+                color: gray;
+                text-align: center;
+                border-radius: .5rem;
+                border: 1px solid gray;
+
+            }
+            select{
+                option{
+                    text-align: start;
+                    border-radius: .5rem;
+                    &:hover{
+                        background: rgb(255, 192, 203, .2) !important;
+                    }
+                }
+            }
+
+            button{
+                font-family: "Nunito Sans", sans-serif;
+                font-size: 1.2rem;
+                border: 1px solid rgb(255, 192, 203, .2);
+                border-radius: .5rem;
+                background: pink;
+                padding: .5rem 1.5rem;
+                color: white;
+                transition: all .3s ease-in-out;
+
+                &:active{
+                    background: white;
+                    color: pink;
+                    box-shadow: 1px 2px pink;
+                }
+            }
+        }
+        .sec-productos-buscador{
+            padding: 2rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 20rem;
+                border-radius: 1rem;
+                border: 1px solid rgb(255, 192, 203);
+                transition: all .3s ease-in-out;
+                .card-img{
+                    height: 10rem;
+                    width: 100%;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 1rem 1rem 0 0;
+                    }
+                }
+                .card-info{
+                    padding: 1rem;
+                    height: 15rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 1rem;
+                    h2{
+                        margin: 0;
+                        font-family: "Playfair Display", serif;
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+                    .p-descrip{
+                        font-family: "Nunito Sans", sans-serif;
+                        font-size: 1rem;
+                        text-align: justify;
+                    }
+                    .p-precio{
+                        font-family: "Playfair Display", serif;
+                        font-size: 1.2rem;
+                        text-align: center;
+                        margin: 0;
+                    }
+                }
+                .card-btn{
+                    padding-bottom: 1rem;
+                    button{
+                        font-family: "Nunito Sans", sans-serif;
+                        font-size: 1.2rem;
+                        border: 1px solid rgb(255, 192, 203, .2);
+                        border-radius: .5rem;
+                        background: pink;
+                        padding: .5rem 1.5rem;
+                        color: white;
+                        transition: all .3s ease-in-out;
+
+                        &:active{
+                            background: white;
+                            color: pink;
+                            box-shadow: 1px 2px pink;
+                        }
+                    }
+                }
+                &:hover{
+                    background: rgb(255, 192, 203, .2);
+                    border: 1px solid rgb(255, 192, 203, .2);
+                }
+            }
+        }
+    }
+
+    .seccion-contacto{
+        padding: 6rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        z-index: 1;
+        position: relative;
+
+        .sec-titulo{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            h2{
+                padding: 0;
+                margin: 0;
+                font-family: "Playfair Display", serif;
+                font-size: 3rem;
+                font-weight: 100;
+                text-transform: uppercase;
+            }
+            h3{
+                font-family: "Nunito Sans", sans-serif;
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
+        .form-contacto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                width: 30rem;
+
+                input, textarea, button{
+                    width: 100%;
+                    padding: .5rem 1rem;
+                    border-radius: .5rem;
+                    border: 1px solid pink;
+                    text-align: start;
+                    font-family: "Nunito Sans", sans-serif;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: black;
+                }
+
+                button{
+                    font-family: "Nunito Sans", sans-serif;
+                    font-size: 1.2rem;
+                    text-align: center;
+                    border: 1px solid rgb(255, 192, 203, .2);
+                    border-radius: .5rem;
+                    background: white;
+                    padding: .5rem 1.5rem;
+                    color: pink;
+                    box-shadow: 1px 2px pink;
+                    transition: all .3s ease-in-out;
+
+                    &:active{
+                        background: pink;
+                        color: white;
+                        box-shadow: 1px 2px pink;
+                    }
+                }
+            }
+        }
+    }
+    .seccion-contacto::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/img/alexa-williams-ccCSwfkJxZA-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: .3;
+        z-index: -1;
+    }
+
+}

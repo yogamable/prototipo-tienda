@@ -1,0 +1,86 @@
+.header{
+    padding: 2rem;
+    display: grid;
+    grid-template-areas: "h1 h2 h3";
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+
+    .header-1{
+        grid-area: h1;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 100,
+            'GRAD' 0;
+            font-size: 6rem;
+        }
+        
+        a{
+            font-family: "Londrina Shadow", sans-serif;
+            font-size: 3rem;
+            text-align: start;
+            text-decoration: none;
+            line-height: 2.5rem;
+            color: black;
+        }
+    }
+    .header-2{
+        grid-area: h2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        nav{
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                padding: 0;
+                
+                li{
+                    list-style-type: none;
+                    
+                    a{
+                        text-decoration: none;
+                        font-family: "Nunito Sans", sans-serif;
+                        font-size: 1.2rem;
+                        font-weight: 350;
+                        text-transform: uppercase;
+                        color: black;
+                        &:hover{
+                            text-decoration: overline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-3{
+        grid-area: h3;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+        .icono-carrito{
+            position: absolute;
+            display: inline-block;
+            color: black;
+            transform: rotateY(180deg);
+            .material-symbols-outlined {
+                font-variation-settings:
+                'FILL' 0,
+                'wght' 100,
+                'GRAD' 0;
+                font-size: 4rem;
+            }
+        }
+          
+        
+    }
+}

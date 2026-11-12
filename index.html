@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js"></script>
+    <title>Prototipo Tienda</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-1">
+            <span class="material-symbols-outlined">
+            auto_stories
+            </span>
+            <a href="index.html">Prototipo Tienda</a>
+        </div>
+        <div class="header-2">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-3">
+            <a href="#icono-carrito" class="btnAbrir icono-carrito" role="button" aria-label="Icono carrito" aria-expanded="false" aria-controls="asie-carrito" >
+                <span class="material-symbols-outlined">
+                shopping_cart
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <aside class="aside-carrito">
+        <div class="carrito-header">
+            <h2>Tu carrito</h2>
+            <a href="#icono-carrito" class="btnCerrar" role="button" aria-label="Icono carrito" aria-expanded="false" aria-controls="asie-carrito" >
+                <span class="material-symbols-outlined">
+                shopping_cart
+                </span>
+            </a>
+        </div>
+        <div class="carrito-js">
+            <h3 class="titulo-productos">Tus Productos</h3>
+            <p id="carrito-vacio" hidden>¡Aún no hay productos en el carrito!</p>
+            <ul class="carrito-lista"></ul>
+        </div>
+
+        <div id="contenedor-formulario" hidden>
+            <form id="formulario-pedido">
+                <p>Datos de Contacto</p>
+                <input type="text" id="nombre-cliente"
+                    placeholder="Nombre completo" required>
+                <input type="email" id="correo-cliente"
+                    placeholder="Correo electrónico" required>
+                <input type="tel" id="telefono-cliente"
+                    placeholder="Teléfono" required>
+            </form>
+        </div>
+
+        <div class="carrito-footer">
+            <div class="div-suma">
+                <p class="titulo-total">Total</p>
+                <p class="total-compra"></p>
+            </div>
+        </div>
+        <div class="div-confirmacion">
+             <p id="mensaje-confirmacion">
+                ¡Tu pedido ha sido enviado!
+                Pronto nos contactaremos contigo.
+            </p>
+
+            <button type="button" id="btn-seguir-comprando">
+                Seguir comprando
+            </button>
+        </div>
+    </aside>
+
+    <main class="main-index">
+        <section class="seccion-hero">
+            <div class="carousel-img ci-1">
+                <img src="/img/1.yellow-cactus-MTNN8IfrY6Y-unsplash (1).jpg" alt="">
+            </div>
+            <div class="carousel-img ci-2">
+                <img src="/img/2.lumensoft-technologies-pSz3JFTDZMA-unsplash.jpg" alt="">
+            </div>
+            <div class="carousel-img ci-3">
+                <img src="/img/3.vitalii-abakumov-12ySg9sJ32I-unsplash.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="seccion-productos">
+            <div class="sec-titulo">
+                <h1>Productos destacados</h1>
+            </div>
+            <div class="sec-productos" id="productos-destacados">
+                
+                
+            </div>
+        </section>
+
+        <section class="seccion-banner-1">
+            <div class="banner b-1">
+                <span class="material-symbols-outlined">
+                    redeem
+                </span>
+                <h3>Regalos <br>prácticos</h3>
+            </div>
+            <div class="banner b-2">
+                <span class="material-symbols-outlined">
+                    business
+                </span>
+                <h3>Soluciones <br>para empresas</h3>
+            </div>
+            <div class="banner b-3">
+                <span class="material-symbols-outlined">
+                    home
+                </span>
+                <h3>Organización <br>para tu hogar</h3>
+            </div>
+            <div class="banner b-4">
+                <span class="material-symbols-outlined">
+                    create
+                </span>
+                <h3>Materiales <br>de estudio</h3>
+            </div>
+        </section>
+
+        <section class="seccion-buscador" id="productos">
+            <div class="sec-titulo">
+                <h2>¿Qué buscas?</h2>
+                <h3>Encuentra en nuestro buscador todo lo que necesitas</h3>
+            </div>
+
+            <div class="sec-buscador">
+                <input type="text" placeholder="Busca por palabra" id="busca-palabra">
+                <select name="categoria" id="busca-categoria">
+                    <option value="agendas">Agendas</option>
+                    <option value="papeleria">Papelería</option>
+                    <option value="todos">Todos</option>
+                </select>
+                <button id="btn-buscar">Buscar</button>
+            </div>
+
+            <div class="sec-productos-buscador">
+                
+            </div>
+        </section>
+
+        <section class="seccion-contacto" id="contacto">
+            <div class="sec-titulo">
+                <h2>Contáctanos</h2>
+            </div>
+
+            <div class="form-contacto">
+                <form action="">
+                    <input type="text" placeholder="Escribe tu nombre">
+                    <input type="email" name="mail" id="mail" placeholder="Escribe tu correo">
+                    <input type="number" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe un mensaje"></textarea>
+                    <button >Enviar</button>
+                </form>
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="f-1">
+            <ul>
+                <li>
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span> 
+                    <a href="#">Visitanos en Calle Uno #111, Ciudad Uno</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                    <a href="#">tienda@tienda.cl</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        call
+                    </span>
+                    <a href="#">+56912345678</a>
+                </li>
+            </ul>
+        </div>
+        <div class="f-2">
+            <div class="f-2-1">
+                <span class="material-symbols-outlined">
+                auto_stories
+                </span>
+                <a href="index.html">Prototipo Tienda</a>
+            </div>
+            <div class="f-2-2">
+                <span class="material-symbols-outlined">
+                    copyright
+                </span>
+                <p>Prototipo hecho por Nicole</p></div>
+        </div>
+        <div class="f-3">
+            <div class="div-maps">
+                <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5729.561117109333!2d-71.98033728179631!3d-39.27416111773271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96147f1477aac78d%3A0x5f8f752241bf5bfe!2sPlaya%20Puc%C3%B3n!5e0!3m2!1ses!2scl!4v1793752978690!5m2!1ses!2scl" width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,701 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL,GRAD,opsz,wght@0..1,-50..200,20..48,100..700");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 2rem;
+  display: grid;
+  grid-template-areas: "h1 h2 h3";
+  grid-template-columns: 2fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+.header .header-1 {
+  grid-area: h1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.header .header-1 .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0;
+  font-size: 6rem;
+}
+.header .header-1 a {
+  font-family: "Londrina Shadow", sans-serif;
+  font-size: 3rem;
+  text-align: start;
+  text-decoration: none;
+  line-height: 2.5rem;
+  color: black;
+}
+.header .header-2 {
+  grid-area: h2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-2 nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0;
+}
+.header .header-2 nav ul li {
+  list-style-type: none;
+}
+.header .header-2 nav ul li a {
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 350;
+  text-transform: uppercase;
+  color: black;
+}
+.header .header-2 nav ul li a:hover {
+  text-decoration: overline;
+}
+.header .header-3 {
+  grid-area: h3;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+.header .header-3 .icono-carrito {
+  position: absolute;
+  display: inline-block;
+  color: black;
+  transform: rotateY(180deg);
+}
+.header .header-3 .icono-carrito .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0;
+  font-size: 4rem;
+}
+
+.main-index .seccion-hero {
+  position: relative;
+  height: 35rem;
+  width: 100%;
+  overflow: hidden;
+}
+.main-index .seccion-hero .carousel-img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.main-index .seccion-hero .carousel-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.main-index .seccion-hero .carousel-img.active {
+  opacity: 1;
+}
+.main-index .seccion-productos {
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.main-index .seccion-productos .sec-titulo h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.main-index .seccion-productos .sec-productos {
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.main-index .seccion-productos .sec-productos .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(255, 192, 203);
+  transition: all 0.3s ease-in-out;
+}
+.main-index .seccion-productos .sec-productos .card .card-img {
+  height: 12rem;
+  width: 100%;
+}
+.main-index .seccion-productos .sec-productos .card .card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.main-index .seccion-productos .sec-productos .card .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  height: 15rem;
+}
+.main-index .seccion-productos .sec-productos .card .card-info h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.main-index .seccion-productos .sec-productos .card .card-info .p-descrip {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  text-align: justify;
+}
+.main-index .seccion-productos .sec-productos .card .card-info .p-precio {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.main-index .seccion-productos .sec-productos .card .card-btn {
+  padding-bottom: 1rem;
+}
+.main-index .seccion-productos .sec-productos .card .card-btn .btn-agregar {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid rgba(255, 192, 203, 0.2);
+  border-radius: 0.5rem;
+  background: pink;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.main-index .seccion-productos .sec-productos .card .card-btn .btn-agregar:active {
+  background: white;
+  color: pink;
+  box-shadow: 1px 2px pink;
+}
+.main-index .seccion-productos .sec-productos .card:hover {
+  background: rgba(255, 192, 203, 0.2);
+  border: 1px solid rgba(255, 192, 203, 0.2);
+}
+.main-index .seccion-banner-1 {
+  padding: 2rem;
+  display: grid;
+  grid-template-areas: "b-1 b-2 b-3 b-4";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: rgba(255, 192, 203, 0.1);
+}
+.main-index .seccion-banner-1 .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-index .seccion-banner-1 .banner .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0;
+  font-size: 6rem;
+  transform: scaleX(-1);
+  color: pink;
+}
+.main-index .seccion-banner-1 .banner h3 {
+  font-family: "Londrina Shadow", sans-serif;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.main-index .seccion-banner-1 .b-1 {
+  grid-area: b-1;
+}
+.main-index .seccion-banner-1 .b-2 {
+  grid-area: b-2;
+}
+.main-index .seccion-banner-1 .b-3 {
+  grid-area: b-3;
+}
+.main-index .seccion-banner-1 .b-4 {
+  grid-area: b-4;
+}
+.main-index .seccion-buscador {
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.main-index .seccion-buscador .sec-titulo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.main-index .seccion-buscador .sec-titulo h2 {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.main-index .seccion-buscador .sec-titulo h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.main-index .seccion-buscador .sec-buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.main-index .seccion-buscador .sec-buscador input, .main-index .seccion-buscador .sec-buscador select, .main-index .seccion-buscador .sec-buscador button {
+  padding: 0.5rem 2rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  color: gray;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 1px solid gray;
+}
+.main-index .seccion-buscador .sec-buscador select option {
+  text-align: start;
+  border-radius: 0.5rem;
+}
+.main-index .seccion-buscador .sec-buscador select option:hover {
+  background: rgba(255, 192, 203, 0.2) !important;
+}
+.main-index .seccion-buscador .sec-buscador button {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid rgba(255, 192, 203, 0.2);
+  border-radius: 0.5rem;
+  background: pink;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.main-index .seccion-buscador .sec-buscador button:active {
+  background: white;
+  color: pink;
+  box-shadow: 1px 2px pink;
+}
+.main-index .seccion-buscador .sec-productos-buscador {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.main-index .seccion-buscador .sec-productos-buscador .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(255, 192, 203);
+  transition: all 0.3s ease-in-out;
+}
+.main-index .seccion-buscador .sec-productos-buscador .card .card-img {
+  height: 10rem;
+  width: 100%;
+}
+.main-index .seccion-buscador .sec-productos-buscador .card .card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.main-index .seccion-buscador .sec-productos-buscador .card .card-info {
+  padding: 1rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.main-index .seccion-buscador .sec-productos-buscador .card .card-info h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.main-index .seccion-buscador .sec-productos-buscador .card .card-info .p-descrip {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  text-align: justify;
+}
+.main-index .seccion-buscador .sec-productos-buscador .card .card-info .p-precio {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+}
+.main-index .seccion-buscador .sec-productos-buscador .card .card-btn {
+  padding-bottom: 1rem;
+}
+.main-index .seccion-buscador .sec-productos-buscador .card .card-btn button {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid rgba(255, 192, 203, 0.2);
+  border-radius: 0.5rem;
+  background: pink;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.main-index .seccion-buscador .sec-productos-buscador .card .card-btn button:active {
+  background: white;
+  color: pink;
+  box-shadow: 1px 2px pink;
+}
+.main-index .seccion-buscador .sec-productos-buscador .card:hover {
+  background: rgba(255, 192, 203, 0.2);
+  border: 1px solid rgba(255, 192, 203, 0.2);
+}
+.main-index .seccion-contacto {
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+}
+.main-index .seccion-contacto .sec-titulo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.main-index .seccion-contacto .sec-titulo h2 {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.main-index .seccion-contacto .sec-titulo h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.main-index .seccion-contacto .form-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-index .seccion-contacto .form-contacto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 30rem;
+}
+.main-index .seccion-contacto .form-contacto form input, .main-index .seccion-contacto .form-contacto form textarea, .main-index .seccion-contacto .form-contacto form button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid pink;
+  text-align: start;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+}
+.main-index .seccion-contacto .form-contacto form button {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 1px solid rgba(255, 192, 203, 0.2);
+  border-radius: 0.5rem;
+  background: white;
+  padding: 0.5rem 1.5rem;
+  color: pink;
+  box-shadow: 1px 2px pink;
+  transition: all 0.3s ease-in-out;
+}
+.main-index .seccion-contacto .form-contacto form button:active {
+  background: pink;
+  color: white;
+  box-shadow: 1px 2px pink;
+}
+.main-index .seccion-contacto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/alexa-williams-ccCSwfkJxZA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .f-1 ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+}
+.footer .f-1 ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: start;
+  list-style-type: none;
+}
+.footer .f-1 ul li a {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+.footer .f-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.footer .f-2 .f-2-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .f-2 .f-2-1 .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0;
+  font-size: 6rem;
+}
+.footer .f-2 .f-2-1 a {
+  font-family: "Londrina Shadow", sans-serif;
+  font-size: 3rem;
+  text-align: start;
+  text-decoration: none;
+  line-height: 2.5rem;
+  color: black;
+}
+.footer .f-2 .f-2-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .f-3 .div-maps {
+  height: 8rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: pink;
+}
+.footer .f-3 .div-maps .iframe {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.aside-carrito {
+  padding: 3rem 2rem;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  background: white;
+  border-left: 1px solid rgba(255, 192, 203, 0.2);
+  overflow-y: auto;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: transform 1.5s ease-in-out, visibility 1.5s linear 1.5s;
+}
+.aside-carrito .carrito-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+.aside-carrito .carrito-header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+.aside-carrito .carrito-header a {
+  display: inline-block;
+  transform: rotateY(0deg);
+  transition: transform 0.5s ease-out;
+  color: black;
+}
+.aside-carrito .carrito-header a .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0;
+  font-size: 4rem;
+}
+.aside-carrito .carrito-js {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.aside-carrito .carrito-js .titulo-productos {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.aside-carrito .carrito-js #carrito-vacio {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  background: rgba(255, 192, 203, 0.3);
+  padding: 0.8rem 1rem;
+  width: 100%;
+}
+.aside-carrito .carrito-js ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+.aside-carrito .carrito-js ul li {
+  background: rgba(255, 192, 203, 0.2);
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+  text-decoration: none;
+  width: 100%;
+}
+.aside-carrito .carrito-js ul li p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: start;
+}
+.aside-carrito #contenedor-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.aside-carrito #contenedor-formulario form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.aside-carrito #contenedor-formulario form p {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.aside-carrito #contenedor-formulario form input {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  padding: 0.3rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.aside-carrito #contenedor-formulario form input:focus {
+  background: rgba(255, 192, 203, 0.2);
+}
+.aside-carrito .carrito-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.aside-carrito .carrito-footer .div-suma .titulo-total {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.aside-carrito .carrito-footer .div-suma .total-compra {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.aside-carrito .carrito-footer button {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid rgba(255, 192, 203, 0.2);
+  border-radius: 0.5rem;
+  background: pink;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.aside-carrito .carrito-footer button:hover {
+  background: rgba(255, 192, 203, 0.6);
+}
+.aside-carrito .carrito-footer button:active {
+  background: white;
+  color: pink;
+  box-shadow: 1px 2px pink;
+}
+.aside-carrito .div-confirmacion p {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.aside-activo {
+  visibility: visible;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out 0.3s;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/*# sourceMappingURL=style.css.map */

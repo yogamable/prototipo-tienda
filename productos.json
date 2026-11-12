@@ -1,0 +1,142 @@
+[
+    {
+        "id": "1",
+        "nombre": "Agenda Floral",
+        "imagen": "img/lumitar-bnreUe4ZzD8-unsplash.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Organiza tus días con esta delicada agenda floral, ideal para planificar actividades, registrar ideas y acompañar tus proyectos con creatividad.",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "2",
+        "nombre": "Agenda Piña",
+        "imagen": "/img/pineapple-supply-co-zLLpMyxAKDE-unsplash.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Llena tus días de energía y color con esta agenda de piña, perfecta para organizar pendientes, establecer metas y registrar momentos especiales.",
+        "destacados": false,
+        "novedosos": true
+    },
+    {
+        "id": "3",
+        "nombre": "Planner + taza",
+        "imagen": "/img/carlos-garcia-hansen-vGtx4GR-e9I-unsplash.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Combina organización y momentos de pausa con este práctico planner acompañado de una taza, ideal para disfrutar tus rutinas diariamente.",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "4",
+        "nombre": "Cuadernos con diseño",
+        "imagen": "/img/yellow-cactus-MTNN8IfrY6Y-unsplash.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Dale espacio a tus ideas con estos cuadernos de diseños originales, ideales para escribir, dibujar, estudiar y desarrollar proyectos personales.",
+        "destacados": false,
+        "novedosos": true
+    },
+    {
+        "id": "5",
+        "nombre": "Papeles para recados",
+        "imagen": "/img/aleksander-fox-Ki6JO9sraB8-unsplash.jpg",
+        "precio": 5000,
+        "categoria": "papeleria",
+        "descripcion": "Mantén tus mensajes siempre a mano con estos prácticos papeles para recados, perfectos para recordatorios, notas rápidas y pequeñas dedicatorias.",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "6",
+        "nombre": "Esquelas",
+        "imagen": "/img/hero-2.jpg",
+        "precio": 3000,
+        "categoria": "papeleria",
+        "descripcion": "Comparte pensamientos y mensajes especiales con estas delicadas esquelas, ideales para acompañar regalos, expresar cariño y sorprender a quienes quieres.",
+        "destacados": false,
+        "novedosos": true
+    },
+    {
+        "id": "7",
+        "nombre": "Stickers",
+        "imagen": "/img/alexa-williams-y_EOdla_IBc-unsplash.jpg",
+        "precio": 2000,
+        "categoria": "papeleria",
+        "descripcion": "Agrega personalidad a tus objetos favoritos con estos stickers decorativos, perfectos para personalizar agendas, cuadernos, sobres y accesorios cotidianos.",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "8",
+        "nombre": "Agendas monocromo",
+        "imagen": "/img/stylite-yu-aKjAbP8DrMw-unsplash.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Disfruta una estética sencilla y elegante con estas agendas monocromáticas, diseñadas para organizar tus actividades y mantener tus prioridades presentes.",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "9",
+        "nombre": "Agenda solar 2",
+        "imagen": "/img/hero-2.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Planifica cada jornada con optimismo gracias a esta agenda solar, una compañera práctica para ordenar tus tareas, objetivos y nuevas ideas.",
+        "destacados": false,
+        "novedosos": true
+    },
+    {
+        "id": "10",
+        "nombre": "Marcadores de página",
+        "imagen": "/img/kasturi-roy-bYy9hndOx0k-unsplash.jpg",
+        "precio": 12000,
+        "categoria": "papeleria",
+        "descripcion": "Encuentra fácilmente tus lecturas favoritas con estos marcadores de página, ideales para identificar capítulos, señalar frases y acompañar tus libros.",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "11",
+        "nombre": "Agenda astral 2",
+        "imagen": "/img/hero-1.jpg",
+        "precio": 12000,
+        "categoria": "agendas",
+        "descripcion": "Conecta tus planes con tu inspiración gracias a esta agenda astral, perfecta para organizar proyectos, registrar sueños y explorar nuevas ideas.",
+        "destacados": false,
+        "novedosos": true
+    },
+    {
+        "id": "12",
+        "nombre": "Impresiones fotográficas",
+        "imagen": "/img/kristyna-squared-one-jv0yt5U8wCU-unsplash.jpg",
+        "precio": 5000,
+        "categoria": "papeleria",
+        "descripcion": "Conserva tus recuerdos más queridos con estas impresiones fotográficas, ideales para decorar espacios, crear álbumes y regalar momentos inolvidables.",
+        "destacados": true,
+        "novedosos": false
+    },
+    {
+        "id": "13",
+        "nombre": "Esquelas 2",
+        "imagen": "/img/hero-2.jpg",
+        "precio": 3000,
+        "categoria": "papeleria",
+        "descripcion": "Transforma tus palabras en pequeños detalles con estas esquelas, perfectas para escribir dedicatorias, agradecer gestos y acompañar obsequios especiales.",
+        "destacados": false,
+        "novedosos": true
+    },
+    {
+        "id": "14",
+        "nombre": "Stickers personalizados",
+        "imagen": "/img/kasturi-roy-caRKch3FR9Q-unsplash.jpg",
+        "precio": 2000,
+        "categoria": "papeleria",
+        "descripcion": "Crea detalles únicos con estos stickers personalizados, ideales para decorar empaques, identificar pertenencias y dar un toque especial a tus proyectos.",
+        "destacados": true,
+        "novedosos": false
+    }
+]
