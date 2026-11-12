@@ -15,7 +15,7 @@ El proyecto utiliza **HTML, CSS/SCSS y JavaScript**, incorporando archivos **JSO
 - **Persistencia de datos:** almacenamiento del carrito para conservar los productos seleccionados durante la navegación.
 - **Gestión de pedidos:** formulario para recopilar los datos de contacto del cliente y generar el pedido mediante JavaScript.
 - **Visualización del pedido en consola:** al presionar el botón de envío, se muestran en la consola del navegador los productos seleccionados, las cantidades, el total de compra y los datos de contacto ingresados.
-- **Diseño responsivo:** adaptación de la interfaz a distintos tamaños de pantalla.
+- **Diseño de escritorio**: interfaz optimizada para su visualización en computadores. El prototipo no cuenta actualmente con adaptación responsive para dispositivos móviles o tablets.
 
 ## Tecnologías utilizadas
 
@@ -50,4 +50,4 @@ Desarrollar una experiencia de comercio electrónico funcional, intuitiva y adap
 
 ## Estado del proyecto
 
-Prototipo funcional con fines demostrativos y de aprendizaje.
+Prototipo funcional en entorno de escritorio. La interfaz está diseñada para visualizarse correctamente en computadores y no cuenta con adaptación responsive para otros dispositivos.
