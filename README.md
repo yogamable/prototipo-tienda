@@ -51,3 +51,8 @@ Desarrollar una experiencia de comercio electrónico funcional, intuitiva y adap
 ## Estado del proyecto
 
 Prototipo funcional en entorno de escritorio. La interfaz está diseñada para visualizarse correctamente en computadores y no cuenta con adaptación responsive para otros dispositivos.
+
+## Autora Prototipo
+
+Nicole Velásquez
+nicovelbaz@gmail.com
