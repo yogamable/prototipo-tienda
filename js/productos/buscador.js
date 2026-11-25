@@ -1,5 +1,5 @@
 
-import { mostrarProductos } from './renderProductos.js';
+import { mostrarProductos } from 'renderProductos.js';
 
 
 export function iniciarBuscador(productos) {
