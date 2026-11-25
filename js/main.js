@@ -1,8 +1,8 @@
-import 'js/carrito/carrito.js';
-import { cargarProductos } from 'data/cargadorData.js';
-import { mostrarDestacados } from 'productos/renderProductos.js';
-import { iniciarBuscador } from 'productos/buscador.js';
-import { iniciarCarousel } from 'componentes/carousel.js';
+import './js/carrito/carrito.js';
+import { cargarProductos } from './data/cargadorData.js';
+import { mostrarDestacados } from './productos/renderProductos.js';
+import { iniciarBuscador } from './productos/buscador.js';
+import { iniciarCarousel } from './componentes/carousel.js';
 
 // INICIALIZAR SITIO
 
