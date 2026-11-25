@@ -1,4 +1,4 @@
-import './js/carrito/carrito.js';
+import './carrito/carrito.js';
 import { cargarProductos } from './data/cargadorData.js';
 import { mostrarDestacados } from './productos/renderProductos.js';
 import { iniciarBuscador } from './productos/buscador.js';
